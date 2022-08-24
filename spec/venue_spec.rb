@@ -76,8 +76,9 @@ describe Venue do
       venue.add_patron('Bob')
       venue.add_patron('James')
       venue.add_patron('Cat')
+      venue.add_patron('Steve')
       
-      expect(venue.patrons.count).to eq 5
+      expect(venue.patrons.count).to eq 6
       
       venue.kick_out
       
