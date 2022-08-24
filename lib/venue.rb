@@ -20,6 +20,8 @@ class Venue
      @patrons.count >= 5
   end
 
+  def kick_out
+    @patrons.pop
+  end
 
-  
 end
